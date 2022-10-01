@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+html {
+    font-size: 62.5%;
+}
+:root  {
+    background-color: #f4f4f4;
+    --border-primary:#773344;
+    --border-secondary:#C45470;
+    --border-gradient:rgb(119,51,68);
+    --blue-primary:#286378;
+    --blue-secondary:#4BA5C4;
+    --blue-gradient: rgb(40,99,120);
+    --black-100:#261F22;
+    --black-75:#534e50;
+    --black-50:#807c73;
+    --black-25:#acabab;
+    --black-10:#dfdfdf;
+    --university-primary:#7bc07d;
+    --university-secondary:#477A49;
+    --university-gradient:rgb(69,74,70);
+    --demister-primary:#3c6e71;
+    --demister-secondary:#698682;
+    --demister-gradient: rgb(60,110,113);
+    --grid-gradient:#bda287;
+}
+.contactacion{
+    grid-area: contact;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+    background: var(--black-10);
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: .8rem;
+    min-width: 30rem;
+    height: 70vh;
+    background: var(--blue-primary);
+}
+.formulario div h1{
+    font-size: 3.8rem;
+}
+.form--input{
+    width: 100%;
+    padding: 1rem;
+    margin: .9rem 0;
+    border-radius: .4rem;
+    background: var(--black-10);
+}
+    .form--input:focus{
+        background: var(--black-25);
+        outline: none;
+    }
+    .form--input::placeholder{
+        color: var(--black-100);
+    }
+form {
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    align-items: center;
+    justify-content: center;
+}
+form  li label{
+    font-size: 2.827rem ;
+}
+form button{
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--black-100);
+    width: 100%;
+    margin: .3rem 1rem;
+    padding: 1rem;
+    transition: .3s;
+}
+        form button:hover{
+            background-color: var(--black-50);
+        }
